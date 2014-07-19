@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+ 
+  <script type="text/javascript" src="presentationlayer.js"></script>
+  
+<!-- Later on we will use python instead of JS to do the data processing part -->
+
+  <script type="text/javascript" src="Backend_data_process_layer.js"></script>
+
+<!--- Later on this json file will be replaced by Database-->
+
+  <script type="text/javascript" src="GPS_data_timed.js"></script>
+
+
+</head>
+
+<!-- Get the Position of vehicle id 1 at time 15:32:17 -->
+<body onload="get_position('1','15:32:17')">
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+
+
+</html>
